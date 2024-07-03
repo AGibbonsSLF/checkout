@@ -654,7 +654,7 @@ class GitCommandManager {
     }
     fetch(refSpec, options) {
         return __awaiter(this, void 0, void 0, function* () {
-            const args = ['-c', 'protocol.version=2', 'fetch'];
+            const args = ['fetch'];
             if (!refSpec.some(x => x === refHelper.tagsRefSpec) && !options.fetchTags) {
                 args.push('--no-tags');
             }
